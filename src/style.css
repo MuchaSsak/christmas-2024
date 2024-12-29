@@ -1,0 +1,58 @@
+*::before,
+*,
+*::after {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  font-family: monospace;
+  background-color: #000000;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 1rem;
+  text-align: center;
+  padding-inline: 5rem;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+  cursor: pointer;
+}
+
+p {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  opacity: 0;
+}
+
+@keyframes shiftColor {
+  from {
+    background-color: #000000;
+  }
+  to {
+    background-color: #3e5670;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
